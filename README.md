@@ -44,7 +44,7 @@ npm run lint:fix  # Auto-fix lint issues
 **Frontend Validation:**
 - Real-time validation with error messages below each field
 - Name: 2-100 characters required
-- Description: 10-1000 characters required
+- Message: 10-1000 characters required
 - File: Required, must be under 10MB
 - Error states with red borders and text
 - Errors clear when user starts typing

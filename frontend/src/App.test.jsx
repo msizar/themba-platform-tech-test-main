@@ -35,7 +35,7 @@ describe('App Component - Form Validation', () => {
 
     await waitFor(() => {
       expect(
-        screen.getByText('Description must be at least 10 characters'),
+        screen.getByText('Message must be at least 10 characters'),
       ).toBeInTheDocument();
     });
   });

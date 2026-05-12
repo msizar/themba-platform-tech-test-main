@@ -28,11 +28,11 @@ const App = () => {
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Description is required';
+      newErrors.message = 'Message is required';
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = 'Description must be at least 10 characters';
+      newErrors.message = 'Message must be at least 10 characters';
     } else if (formData.message.trim().length > 1000) {
-      newErrors.message = 'Description must not exceed 1000 characters';
+      newErrors.message = 'Message must not exceed 1000 characters';
     }
 
     if (!file) {

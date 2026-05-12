@@ -16,11 +16,11 @@ const submissionValidationSchema = {
     in: ['body'],
     trim: true,
     notEmpty: {
-      errorMessage: 'Description is required',
+      errorMessage: 'Message is required',
     },
     isLength: {
       options: { min: 10, max: 1000 },
-      errorMessage: 'Description must be between 10 and 1000 characters',
+      errorMessage: 'Message must be between 10 and 1000 characters',
     },
   },
   'file.data': {
