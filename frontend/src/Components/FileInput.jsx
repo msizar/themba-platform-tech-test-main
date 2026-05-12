@@ -30,13 +30,13 @@ const FileInput = ({ onFileSelect, selectedFile }) => {
   };
 
   return (
-    <div 
+    <div
       className={`relative p-6 border-2 border-dashed transition-colors ${
-        isDragging 
-          ? 'border-slate-900 bg-slate-50' 
-          : selectedFile 
-          ? 'border-slate-300 bg-white' 
-          : 'border-slate-200 hover:border-slate-300 bg-white'
+        isDragging
+          ? 'border-slate-900 bg-slate-50'
+          : selectedFile
+            ? 'border-slate-300 bg-white'
+            : 'border-slate-200 hover:border-slate-300 bg-white'
       }`}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
