@@ -7,8 +7,9 @@
     "start-backend": "nodemon backend/src/index.js",
     "start-frontend": "vite frontend",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "npm run test:frontend && npm run test:backend",
-    "test:frontend": "vitest frontend",
+    "test:frontend": "vitest run --config frontend/vitest.config.js",
     "test:backend": "node --test backend/src/index.test.js"
   },
   "dependencies": {
