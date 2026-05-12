@@ -150,7 +150,7 @@ const App = () => {
 
               <div>
                 <label htmlFor="message" className="block text-xs font-medium text-slate-700 uppercase tracking-wider mb-3">
-                  Description
+                  Message:
                 </label>
                 <textarea
                   id="message"
