@@ -6,12 +6,16 @@
   "scripts": {
     "start-backend": "nodemon backend/src/index.js",
     "start-frontend": "vite frontend",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "vitest frontend",
+    "test:backend": "node --test backend/src/index.test.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "dotenv": "^16.0.0",
     "express": "^5.0.0",
+    "express-validator": "^7.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
