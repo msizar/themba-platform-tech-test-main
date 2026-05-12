@@ -142,7 +142,6 @@ const App = () => {
                       ? 'border-red-500 focus:border-red-500'
                       : 'border-slate-200 focus:border-slate-900'
                   }`}
-                  required
                 />
                 {errors.name && (
                   <p className="text-xs text-red-600 mt-1">{errors.name}</p>
@@ -165,7 +164,6 @@ const App = () => {
                       ? 'border-red-500 focus:border-red-500'
                       : 'border-slate-200 focus:border-slate-900'
                   }`}
-                  required
                 />
                 {errors.message && (
                   <p className="text-xs text-red-600 mt-1">{errors.message}</p>
