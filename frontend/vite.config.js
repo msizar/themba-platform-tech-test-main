@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 config({ path: path.join(path.dirname(fileURLToPath(import.meta.url)), '../.env') });
-const { BACKEND_PORT, FRONTEND_PORT } = process.env;
+const { BACKEND_PORT, FRONTEND_PORT } = globalThis.process.env;
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
